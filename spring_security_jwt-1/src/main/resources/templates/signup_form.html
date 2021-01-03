@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Sign Up - CodeJava</title>
+   
+</head>
+<body>
+   
+            <h1>User Registration - Sign Up</h1>
+      
+        <form action="/process_register" object="${user}"
+            method="post" style="max-width: 600px; margin: 0 auto;">
+        
+                <label class="col-4 col-form-label">E-mail: </label>
+                
+                    <input type="email" field="*{email}" class="form-control" required />
+               
+                <label class="col-4 col-form-label">Password: </label>
+                
+                    <input type="password" field="*{password}" class="form-control"
+
+                <label class="col-4 col-form-label">First Name: </label>
+              
+                    <input type="text" field="*{firstName}" class="form-control"
+                    <label class="col-4 col-form-label">Last Name: </label>
+          
+                    <input type="text" field="*{lastName}" class="form-control"
+                            required minlength="2" maxlength="20" />
+              
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            
+        </form>
+    
+</body>
+</html>
